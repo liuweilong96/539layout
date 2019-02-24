@@ -1,0 +1,160 @@
+body{
+    background-color: white;
+    background-image: url('../images/bg.jpg');
+    color: white;
+}
+
+nav li a{
+  display: block;
+  color: #000;
+  list-style-type: none;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: white;
+}
+
+nav li a:hover {
+  background-color: orange;
+}
+
+.characters{
+    background-color:#FECC66;
+    background-image: none;
+    color:black;
+}
+
+.characters nav li a{
+    color:black;
+}
+
+.currentpage{
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+i.fas {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 3em;
+}
+
+/*font awesome code took from font awesome website*/
+
+p{
+    font-family: 'Alef';
+    font-size: 1em;
+    max-width: 80%;
+    padding: 0.25em;
+    margin: 0.5em;
+}
+
+h1{
+    font-family: 'Alef';
+    font-size: 2em;
+    margin: 30px 10px;
+}
+
+h2{
+    font-family: 'Alef';
+    font-size: 1.5em;
+    margin: 20px 10px;
+}
+
+h3{
+    font-family: 'Alef';
+    font-size: 1.25em;
+    margin: 10px;
+}
+/*Google fonts code got from https://www.w3schools.com/howto/howto_google_fonts.asp*/
+/*Google fonts applied to all pages*/
+
+.skip-to-content{
+    position: absolute;
+    top: auto;
+    left: -999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+a.skip-to-content:focus,
+a.skip-to-content:active{
+    text-align: center;
+    font-family: 'Alef';
+    font-size: 1.5em;
+    color: black;
+    top: auto;
+    left: auto;
+    width:100%;
+    height:auto;
+    overflow: visible;
+}
+
+.gallery{
+	display:flex;
+	flex-direction: column;
+	flex-wrap:wrap;
+	margin: auto;
+	justify-content: space-around;
+}
+
+section{
+  width: auto;
+  display: inline-block;
+  margin: 5px;
+  border: 1px solid black;
+  padding:10px;
+  box-sizing: border-box;
+}
+
+section img.memb{
+    width:100%;
+    max-width: 100%
+}
+
+@media screen and (max-width: 600px){
+.gallery{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+	flex-wrap: wrap;
+	margin: auto;
+
+}
+
+section{
+    width:80%;
+}
+}
+
+@media screen and (min-width: 600px) and (max-width: 1000px){
+.gallery{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+	flex-wrap: wrap;
+	margin: auto;
+
+}
+
+section{
+    width:40%;
+    align-content: space-around;
+}
+}
+@media screen and (min-width: 1000px){
+.gallery{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+	flex-wrap: wrap;
+	margin: auto;
+
+}
+
+section{
+    width:28%;
+    align-content: space-around;
+}
+}
